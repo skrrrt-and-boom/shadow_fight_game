@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sword Battle start screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet">
+    <style type="text/css" media="screen">
+      html {
+          height: 100%;
+      }
+      body {
+          height: 100%;
+          margin: 0;
+          font-family: 'Press Start 2P', cursive; 
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      #startButton {
+          display: flex;
+          align-self: center;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 50px;
+          border: 3px solid black;
+          border-radius: 7px;
+          cursor: pointer;
+          box-shadow: 2px 2px;
+      }
+      #startButton:hover {
+          background-color: black;
+          color: white;
+      }
+      #startButton:active {
+          margin-top: 2px;
+          margin-left: 2px;
+      }
+      .options {
+          width: 500px;
+          display: flex;
+          align-self: center;
+          justify-content: space-between;
+          padding: 70px;
+      }
+      .option {
+          width: 200px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: space-between;
+          border: 3px solid black;
+          border-radius: 7px;
+          cursor: pointer;
+          box-shadow: 2px 2px;
+      }
+      .option:hover { 
+          background-color: black;
+          color: white;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="options">
+      <div class="option"><img src="Assets/PvP.png" alt="Awsome gameplay" /><p>PvP on one computer</p></div>
+      <div class="option"><img src="Assets/PvAI.png" alt="AI Battle" /><p>Player vs AI</p></div>
+    </div>
+    <div id='startButton'>Start game</div>
+
+    <script src='start_script.js'></script>
+  </body>
+</html>
